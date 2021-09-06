@@ -8,15 +8,15 @@
 	width: 800px;
 	margin: 200px auto;
 	padding: 20px;
-	border: 5px solid #56ffef;
+	border: 5px solid #06baa9;
 	border-radius: 10px;
-	background: linear-gradient(45deg,#9accff,#47f1e9);
+	background: linear-gradient(45deg,#72a5a3,#75fff7);
   box-shadow:50px 50px 120px #71d0c3;
 }
 fieldset
 {
 	border-radius: 10px;
-	border: 2px solid #000000;
+	border: 2px solid #ffffff;
 }
 legend
 {
@@ -40,7 +40,10 @@ table
   border-collapse: separate;
   border-spacing: 0 15px;
 }
-
+td
+{
+	color: #ffffff;
+}
 input
 {
 	line-height: 30px;
@@ -81,7 +84,7 @@ select:focus {
     min-width: 150px;
     width: auto;
 }
-#ph_no::-webkit-outer-spin-button
+#ph_no::-webkit-outer-spin-button,
 #ph_no::-webkit-inner-spin-button
 {
 	-webkit-appearance: none;
@@ -189,4 +192,16 @@ input[type="radio"]
 {
   opacity: 1;
   right: 0;
+}
+
+
+h2
+{
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+	letter-spacing: 1.5px;
+}
+.cancel_spn
+{
+	color: #ff0000;
 }
