@@ -19,12 +19,3 @@ function myFunction2() {
     document.getElementById("btn_show2").innerHTML = "Show";
   }
 }
-
-//function myFunction2() {
-//  var x = document.getElementById("pass_2");
-//  if (x.type === "password") {
-//    x.type = "text";
-//  } else {
-//    x.type = "password";
-//  }
-//}
