@@ -8,9 +8,10 @@
 	width: 800px;
 	margin: 200px auto;
 	padding: 20px;
-	border: 5px solid #47c53f;
+	border: 5px solid #56ffef;
 	border-radius: 10px;
-	background: linear-gradient(45deg,#9eceff,#70fb8e);
+	background: linear-gradient(45deg,#9accff,#47f1e9);
+  box-shadow:50px 50px 120px #71d0c3;
 }
 fieldset
 {
@@ -47,7 +48,21 @@ input
 	border: 0px solid #ffffff;
 	border-radius: 5px;
 }
+/*PW Show hide button*/
+.showbtn
+{
+	border: none;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+	font-family: 'Oswald', sans-serif;
+	background-color: #ffffff;
+}
 
+/*Radio button*/
 select
 {
 	border-radius: 5px;
@@ -59,7 +74,7 @@ select
   font-size: 18px;
   cursor: pointer;
 	font-family: 'Oswald', sans-serif;
-	background-color: #053ae5;
+	background-color: #820000;
 }
 
 select:focus {
@@ -72,18 +87,13 @@ select:focus {
 	-webkit-appearance: none;
 }
 
-.showbtn
+/*Radio button*/
+input[type="radio"]
 {
-	border: none;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  cursor: pointer;
-	font-family: 'Oswald', sans-serif;
-	background-color: #119fc5;
+	height: 12px;
+	width: 12px;
 }
+/*Register, Cancel, Login*/
 .btn
 {
 	border: none;
@@ -94,10 +104,82 @@ select:focus {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  transition: all 0.5s;
   cursor: pointer;
 	font-family: 'Oswald', sans-serif;
 }
 
 .btn1{background-color: #4CAF50;}
 .btn2{background-color: #ff2300;}
-.btn3{background-color: #44cef7}
+.btn3{background-color: #326ab8}
+
+/*Button span*/
+.btn span
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+/*Custon button span after*/
+.btn1 span:after
+{
+  content: '';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn2 span:after
+{
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn3 span:after
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+/*btn1*/
+.btn1:hover
+{
+	background-color: #1a75ff;
+}
+/*
+.btn1:hover span:after
+{
+  opacity: 1;
+  right: 0;
+}*/
+/*btn2*/
+.btn2:hover span
+{
+  padding-right: 25px;
+}
+
+.btn2:hover span:after
+{
+  opacity: 1;
+  right: 0;
+}
+/*btn3*/
+.btn3:hover span
+{
+  padding-right: 25px;
+}
+
+.btn3:hover span:after
+{
+  opacity: 1;
+  right: 0;
+}
