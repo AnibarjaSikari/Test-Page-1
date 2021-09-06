@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
 body
 {
 	margin: 0;
@@ -9,10 +11,45 @@ body
 /*repeat the automated process*/
 .centerBox
 {
-	margin: 200px auto;
 	position: relative;
 	height: 400px;
 	width: 600px;
-	border: 2px solid #ff0000;
+	margin: 200px auto;
+	padding: 20px;
+	border: 2px solid #47c53f;
+	border-radius: 10px;
+}
+#tab_1
+{
+	display: table;
+	width: 100%;
 	font-size: 1.5em;
 }
+
+table
+{
+	font-family: 'Oswald', sans-serif;
+
+}
+
+#ph_no ::-webkit-outer-spin-button, ::-webkit-inner-spin-button
+{
+	-webkit-appearance: none;
+}
+
+.btn
+{
+	border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn1{background-color: #4CAF50;}
+.btn2{background-color: #ff2300;}
+.btn3{background-color: #44cef7}

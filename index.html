@@ -8,24 +8,29 @@
   <body>
 	<div class="centerBox">
 		<form class="" action="" method="post">
-		<table>
+		<table id="tab_1">
 			<tr>
 				<td>Name: </td>
-				<td><input type="text" /></td>
+				<td><input type="text" size="50"/></td>
 			</tr>
 			<tr>
 				<td>User email Id: </td>
-				<td><input type="email" placeholder="example@xyz.com" /></td>
+				<td><input type="email" placeholder="example@xyz.com" size="50" ></td>
 			</tr>
 			<tr>
 				<td>Password: </td>
-				<td><input type="password" /></td>
+				<td><input type="password" ></td>
+			</tr>
+      <tr>
+				<td>Retype Password: </td>
+				<td><input type="password" ></td>
 			</tr>
 			<tr>
 				<td>Gender: </td>
 				<td>
-					<input type="radio" name="gender" value="m"/>Male
-					<input type="radio" name="gender" value="f"/>Female
+					<input type="radio" name="gender" value="m">Male
+					<input type="radio" name="gender" value="f">Female
+          <input type="radio" name="gender" value="o">Others
 				</td>
 			</tr>
 			<tr>
@@ -36,12 +41,14 @@
 						<option selected hidden>Select Country Code</option>
 						<option value="+91">+91 India (Default)</option>
 					</select>
-					<input type="phone" name="" value="">
+					<input type="number" id="ph_no" name="" value="" maxlength="10" >
 				</td>
 			</tr>
       <tr align="center">
         <td colspan="2">
-          <input type="submit" />
+          <button type="button" class="btn btn1">Register</button>
+          <button type="button" class="btn btn2">Cancel</button>
+          <button type="button" class="btn btn3">Log In</button>
         </td>
       </tr>
 		</table>
