@@ -87,11 +87,18 @@ select:focus {
 	-webkit-appearance: none;
 }
 
-/*Radio button*/
+/*Radio button*//*
 input[type="radio"]
 {
 	height: 12px;
 	width: 12px;
+}
+*/
+input[type=radio]
+{
+	-ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
 }
 /*Register, Cancel, Login*/
 .btn
