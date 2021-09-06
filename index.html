@@ -21,11 +21,17 @@
 			</tr>
 			<tr>
 				<td>Password: </td>
-        <td><input type="password" ></td>
+        <td>
+          <input type="password" >
+          <button type="button" id="btn_show1" class="showbtn showbtn_1">Show</button>
+        </td>
 			</tr>
       <tr>
 				<td>Retype Password: </td>
-				<td><input type="password" ></td>
+				<td>
+          <input type="password" >
+          <button type="button" id="btn_show2" class="showbtn showbtn_2">Show</button>
+        </td>
 			</tr>
 			<tr>
 				<td>Gender: </td>
@@ -37,14 +43,13 @@
 			</tr>
 			<tr>
 				<td>Phone No.</td>
-				<td>
-					<select>
+				<td valign="middle">
+					<select id="c_code">
 					<!--selected hidden is applied to use default select-->
 						<option selected hidden>Select Country Code</option>
 						<option value="+91">+91 India (Default)</option>
-
 					</select>
-					<input type="number" id="ph_no" name="" value="" maxlength="10" size="10">
+					<input type="text" id="ph_no" name="" value="" maxlength="10" hint="Enter Your Favourite Number">
 				</td>
 			</tr>
       <tr align="center">
